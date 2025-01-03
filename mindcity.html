@@ -2,294 +2,664 @@
 <html lang="ko">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>마인드시티 MIND CITY</title>
-    <meta name="title" content="마인드시티 MIND CITY">
-    <meta name="description" content="내 마음 받아주는 또 다른 세상, 마인드시티티">
+  <title>마인드시티 MIND CITY</title>
+  <meta name="title" content="마인드시티 MIND CITY">
+  <meta name="description" content="내 마음 받아주는 또 다른 세상, 마인드시티티">
 
-    <!-- favicon -->
-    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <!-- favicon -->
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 
-    <!-- tailwind css -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-    <!-- flowbite -->
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+  <!-- css -->
+  <link href="assets/style.css" rel="stylesheet" type="text/css" />
 
-    <!-- css -->
-    <link href="assets/mstyle.css" rel="stylesheet" type="text/css" />
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- icon -->
-    <link href="
-    https://cdn.jsdelivr.net/npm/uicons@1.1.0/uicons.min.css
-    " rel="stylesheet">
+  <!-- Bagel Fat One -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
 
-    <!-- Bagel Fat One -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+  <!-- wanted sans -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous" />
+  <link rel="preload" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css" />
 
-    <!-- wanted sans -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous" />
-    <link rel="preload" as="style" crossorigin
-        href="https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css" />
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css" />
-
-    <!--aos-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!--aos-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 </head>
 
 <body>
-    <!-- nav -->
-    <nav id="nav" class=" ">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="https://mindcity.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+  <!-- nav -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div id="navmenu" class="container">
+      <a class="navbar-brand" href="index.html">
+        <picture>
+          <source srcset="assets/img/logo.svg" type="image/svg+xml" />
+          <img src="assets/img/logo.svg" class="logo" alt="kobotis logo" />
+        </picture>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
-                <span id="titleText" class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white"><img
-                        src="assets/img/logo-mindcity.png" class="h-6 me-3 content-center"
-                        alt="MIND CITY Logo" /></span>
+        <ul class="navbar-nav d-flex justify-content-center">
+          <li class="nav-item dropdown">
+            <a id="bdark" class="nav-link dropdown-toggle" aria-current="page" href="#" id="navbarDropdownMenuLink"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              코보티스
             </a>
-            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                <button id="mbutton" type="button"
-                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get
-                    started</button>
-                <button  id="mbutton" data-collapse-toggle="navbar-cta" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                    aria-controls="navbar-cta" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
-                </button>
-            </div>
-            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 " id="navbar-cta">
-                <ul
-                    class="flex flex-col text-base p-4 md:p-0 mt-4  rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-gray-800 md:dark:b              g-gray-900 ">
-                    <li>
-                        <a href="mindcity.html" id="linktextCurrent"
-                            class="block py-2 px-3 md:p-0 text-white rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
-                            aria-current="page"><i class="fi fi-rr-home"></i> 홈</a>
-                    </li> 
-                    <li>
-                        <a href="#" id="linktext"
-                            class="block py-2 px-3 md:p-0 text-gray-900 rounded dark:text-white dark:border-gray-700"><i
-                                class="fi fi-rr-heart"></i> 마인드시티</a>
-                    </li>
-                    <li>
-                        <a href="#" id="linktext"
-                            class="block py-2 px-3 md:p-0 text-gray-900 rounded dark:text-white dark:border-gray-700"><i
-                                class="fi fi-rr-following"></i> 마인드코칭</a>
-                    </li>
-                    <li>
-                        <a href="#" id="linktext"
-                            class="block py-2 px-3 md:p-0 text-gray-900 rounded dark:text-white dark:border-gray-700"><i
-                                class="fi fi-rr-search-alt"></i> 마인드 심리테스트</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- nav ends-->
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <!-- hero -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a id="bdark2" class="dropdown-item" href="about.html">회사소개</a></li>
+              <li><a id="bdark2" class="dropdown-item" href="about.html#kobotishistory">회사연혁</a></li>
+              <li><a id="bdark2" class="dropdown-item" href="expert.html">참여전문가</a></li>
+              <hr class="dropdown-divider">
+              <li><a id="bdark2" class="dropdown-item" href="index.html#kobotismap">찾아오시는 길</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a id="bdark" class="nav-link" href="mindcity.html">마인드시티</a>
+          </li>
+          <li class="nav-item">
+            <a id="bdark" class="nav-link" href="https://steptokorea.com/ko">스텝투코리아<i
+                class="bi bi-arrow-up-right"></i></a>
+          </li>
+          <li class="nav-item">
+            <a id="bdark" class="nav-link" href="recruit.html">인재채용</a>
+          </li>
 
-
-        <section class="dark:bg-gray-900">
-            <div class="mx-auto max-w-screen-xl lg:py-16">
-                
-                <div class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
-                    <a href="#" class="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2">
-                        <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
-                            <path d="M11 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm8.585 1.189a.994.994 0 0 0-.9-.138l-2.965.983a1 1 0 0 0-.685.949v8a1 1 0 0 0 .675.946l2.965 1.02a1.013 1.013 0 0 0 1.032-.242A1 1 0 0 0 20 12V2a1 1 0 0 0-.415-.811Z"/>
-                        </svg>
-                        둘러보기
-                    </a>
-                    
-                    <h1 class="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2">마인드시티</h1>
-                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">마인드시티 설명마인드시티 설명마인드시티 설명마인드시티 설명마인드시티 설명마인드시티 설명마인드시티 설명마인드시티 설명마인드시티 설명마인드시티 설명마인드시티 설명마인드시티 설명마인드시티 설명마인드시티 설명마인드시티 설명</p>
-                    <a href="#"  id="mbutton" class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-                        더보기
-                        <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                        </svg>
-                    </a>
-                </div>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
-                        <a href="#" class="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 mb-2">
-                            <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
-                                <path d="M17 11h-2.722L8 17.278a5.512 5.512 0 0 1-.9.722H17a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1ZM6 0H1a1 1 0 0 0-1 1v13.5a3.5 3.5 0 1 0 7 0V1a1 1 0 0 0-1-1ZM3.5 15.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2ZM16.132 4.9 12.6 1.368a1 1 0 0 0-1.414 0L9 3.55v9.9l7.132-7.132a1 1 0 0 0 0-1.418Z"/>
-                            </svg>
-                            Design
-                        </a>
-                        <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">마인드시티</h2>
-                        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">마인드시티에 대한 설명</p>
-                        <a href="#"  id="mblue" class= "dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">더보기
-                            <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                        </svg>
-                        </a>
-                    </div>
-                    <div class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
-                        <a href="#" class="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-purple-400 mb-2">
-                            <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15"/>
-                            </svg>
-                            Code
-                        </a>
-                        <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">마인드시티에 대한 설명</h2>
-                        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">설명설명</p>
-                        <a href="#" id="mblue" class=" dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">더보기
-                            <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-
-        <!-- hero ends-->
-
-        <!-- gallery -->
-
-
-
-        <!-- gallery ends-->
-
-
-
+        </ul>
+      </div>
     </div>
+  </nav>
 
+  <!-- end of nav -->
 
+  <!-- hero -->
+  <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="assets/img/mindcity-logoc.png" alt="" width="72"">
+        <h1 id="bagel" class="display-5 fw-bold"><span id="htGradient">MIND CITY</span></h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mt-4">마음 관리, 어렵지 않아요!</p>
+      <p class="lead mb-4 mt-2 fs-5 text-secondary">AI 기반 심리케어 앱 마인드시티로 행복 루틴
+        시작해보세요! 😉</p>
 
-   
-
-    <!-- footer 
-
-
-    <footer class="bg-white dark:bg-gray-900">
-        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-            <div class="md:flex md:justify-between">
-                <div class="mb-6 md:mb-0">
-                    <a href="https://flowbite.com/" class="flex items-center">
-                        
-                        <span id="titleText"
-                            class="self-center text-1xl font-semibold whitespace-nowrap dark:text-white">MIND CITY</span>
-                    </a>
-                </div>
-                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-                    <div>
-                        <h2 class="mblue mb-6 text-sm font-semibold uppercase dark:text-white">Resources</h2>
-                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                            <li class="mb-1">
-                                <a href="https://flowbite.com/" class="hover:underline text-sm">Flowbite</a>
-                            </li>
-                            <li>
-                                <a href="https://tailwindcss.com/" class="hover:underline text-sm">Tailwind CSS</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 class="mblue mb-6 text-sm font-semibold uppercase dark:text-white ">Follow us</h2>
-                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                            <li class="mb-1 ">
-                                <a href="https://github.com/themesberg/flowbite" class="hover:underline text-sm">Github</a>
-                            </li>
-                            <li>
-                                <a href="https://discord.gg/4eeurUVvTy" class="hover:underline text-sm">Discord</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 class="mblue mb-6 text-sm font-semibold  uppercase dark:text-white">Legal</h2>
-                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                            <li class="mb-1">
-                                <a href="#" class="hover:underline text-sm">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a href="#" class="hover:underline text-sm">Terms &amp; Conditions</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <div class="sm:flex sm:items-center sm:justify-between text-sm">
-                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a id="titleText"
-                        href="https://mindcity.com/" class="hover:underline">MIND CITY</a>. All Rights Reserved.
-                </span>
-                <div class="flex mt-4 sm:justify-center sm:mt-0">
-                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            viewBox="0 0 8 19">
-                            <path fill-rule="evenodd"
-                                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span class="sr-only">Facebook page</span>
-                    </a>
-                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            viewBox="0 0 21 16">
-                            <path
-                                d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
-                        </svg>
-                        <span class="sr-only">Discord community</span>
-                    </a>
-                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            viewBox="0 0 20 17">
-                            <path fill-rule="evenodd"
-                                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span class="sr-only">Twitter page</span>
-                    </a>
-                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            viewBox="0 0 20 20">
-                            <path fill-rule="evenodd"
-                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span class="sr-only">GitHub account</span>
-                    </a>
-                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            viewBox="0 0 20 20">
-                            <path fill-rule="evenodd"
-                                d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span class="sr-only">Dribbble account</span>
-                    </a>
-                </div>
-            </div>
+      <div class="marquee-container mt-5">
+        <div data-aos="zoom-in-left" data-aos-duration="4000" data-aos-easing="ease-in-out">
+          <div class="row mt-3">
+            <marquee scrollamount="4">
+              <div class="gap-2 d-flex justify-content-sm-center">
+                <span id="taganimation">#AI마인드봇</span><span id="taganimation">#흑흑일기</span><span
+                  id="taganimation">#흐느적일기</span><span id="taganimation">#덜덜일기</span><span id="taganimation">#마인드
+                  코칭</span><span id="taganimation">#마인드 심리테스트</span><span id="taganimation">#마인드 챌린지</span>
+              </div>
+            </marquee>
+          </div>
         </div>
-    </footer>
+        <div class="row mt-3">
+          <marquee direction="right" scrollamount="3">
+            <div data-aos="zoom-in-right" data-aos-duration="4000" data-aos-easing="ease-in-out">
+              <div class="gap-2 d-flex justify-content-sm-center">
+                <span id="taganimation">#심리케어</span><span id="taganimation">#심리테스트</span><span
+                  id="taganimation">#우울관리</span><span id="taganimation">#불안관리</span><span
+                  id="taganimation">#AI솔루션</span><span id="taganimation">#전문가코칭</span>
+              </div>
+          </marquee>
+        </div>
 
-    footer ends -->
+        <div class="row mt-3">
+          <marquee scrollamount="4">
+            <div data-aos="zoom-in-left" data-aos-duration="4000" data-aos-easing="ease-in-out">
+              <div class="gap-2 d-flex justify-content-sm-center">
+                <span id="taganimation">#DIY 챌린지</span><span id="taganimation">#데일리 챌린지</span><span
+                  id="taganimation">#마인드 타로</span><span id="taganimation">#자유게시판</span><span
+                  id="taganimation">#대나무숲</span><span id="taganimation">#마인드톡</span><span
+                  id="taganimation">#AI마인드봇</span>
+              </div>
+          </marquee>
+        </div>
 
 
-    <!-- flowbite -->
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+      </div>
+    </div>
+  </div>
 
 
 
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+  <!-- hero ends -->
+
+
+
+
+
+  <!-- features -->
+  <div id="backcontainer2">
+    <div class="container px-4 py-5" id="custom-cards">
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <h2 class="pb-2 display-6 text-dark text-center text-bolder">마인드시티 서비스</h2>
+      </div>
+
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+          <div class="col">
+            <div id="norepeat" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-sm"
+              style="background-image: url('assets/img/mindcity_a.png');">
+              <a href="https://play.google.com/store/apps/details?id=com.kobotis.mindcity" class="link-shadow" target="_new">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <p id="bagel" class="fs-4 htGradient">MIND CITY</p>
+                <h3 class="pt-5 mt-5 mb-4 fs-4 lh-1 fw-bold text-dark">안드로이드 앱 <i class="bi bi-arrow-up-right"></i></h3>
+
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="assets/img/button-google-play-dark.png"" alt="google play badge" width="105vw">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                   
+                  </li>
+
+                </ul>
+              </div></a>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+          <div class="col">
+            <div id="norepeat" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-sm"
+              style="background-image: url('assets/img/mindcity_b.png');">
+              <a href="https://apps.apple.com/kr/app/%EB%A7%88%EC%9D%B8%EB%93%9C%EC%8B%9C%ED%8B%B0-mindcity/id1663107997" class="link-shadow" target="_new">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <p id="bagel" class="fs-4 htGradient">MIND CITY</p>
+                <h3 class="pt-5 mt-5 mb-4 fs-4 lh-1 fw-bold text-dark">iOS 앱 <i class="bi bi-arrow-up-right"></i></h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="assets/img/button-app-store-dark.png"" alt="app store badge" width="100vw">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                   
+                  </li>
+                </ul>
+              </div></a>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+          <div class="col">
+            
+            <div id="norepeat" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-sm"
+              style="background-image: url('assets/img/mindcity_c.png'); width: 100%;"><a href="https://play.google.com/store/apps/details?id=com.kobotis.mindcity" class="link-shadow" target="_new">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <p id="bagel" class="fs-4 htGradient">MIND CITY</p>
+                <h3 class="pt-5 mt-5 mb-4 fs-4 lh-1 fw-bold text-dark">마인드코칭 웹<i class="bi bi-arrow-up-right"></i></h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="assets/img/mindcity-logo-1.png"" alt="mindcity logo" width="42vw">
+
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                  </li>
+
+                </ul>
+              </div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- features ends-->
+
+
+
+  <!-- section -->
+  <div id="backcontainer4">
+    <div class="container px-4 py-5">
+     <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+      <div class="row g-4 align-items-center">
+        
+        <div class="col-12 col-md-6">
+    
+            <img src="assets/img/img1.png" alt="img1" width="100%" class="rounded-4">
+          </div>
+        
+    
+        <div class="col-12 col-md-6 content px-5">
+         
+          <ul class="list-unstyled fs-3 mt-5">
+            <li class="mb-2 align-self-center">
+              <div class="row mb-5">
+                <h1 class="display-5">✍🏻</h1>
+                <div class="col">
+                  <h3>일기 쓰고</h3>
+                </div>
+
+              </div>
+            </li>
+            <li class="mb-2 align-self-center">
+              <div class="row mb-5">
+                <h1 class="display-5">💌</h1>
+                <div class="col">
+                  <h3>AI와 대화하고</h3>
+                </div>
+                
+              </div>
+            </li>
+            <li class="mb-2 align-self-center">
+              <div class="row mb-5">
+                <h1 class="display-5">🍀</h1>
+                <div class="col">
+                  <h3>마음 나눠요</h3>
+                </div>
+               
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    
+    </div>
+  </div></div>
+
+  </div>
+  </div>
+  <!-- section ends -->
+
+
+<!-- section -->
+<div id="backcontainer5">
+  <div class="container px-4 py-5">
+    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+    <div class="row g-4 align-items-center">
+      
+      <!-- 텍스트 섹션 -->
+      <div class="col-12 col-md-6 content px-5">
+        <ul class="list-unstyled fs-3 mt-5">
+          <li class="mb-2 align-self-center">
+            <div class="row mb-5">
+              <h1 class="display-5">✍🏻</h1>
+              <div class="col">
+                <h3>나를 돌보는 일기</h3>
+              </div>
+              <span class="fs-5">
+                <ul>
+                  <li id="ildot">
+                    하루 10분, 생각하고 기록해요
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </li>
+          <li class="mb-2 align-self-center">
+            <div class="row mb-5">
+              <h1 class="display-5">💌</h1>
+              <div class="col">
+                <h3>AI 마인드봇</h3>
+              </div>
+              <span class="fs-5">
+                <ul>
+                  <li id="ildot">
+                    언제나 곁에서 이야기 들어줘요
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </li>
+          <li class="mb-2 align-self-center">
+            <div class="row mb-5">
+              <h1 class="display-5">🍀</h1>
+              <div class="col">
+                <h3>마음 나누는 커뮤니티</h3>
+              </div>
+              <span class="fs-5">
+                <ul>
+                  <li id="ildot">
+                    혼자 앓던 고민을 털어놔봐요
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 이미지 섹션 -->
+      <div class="col-12 col-md-6">
+        <img src="assets/img/img2.png" alt="img2" width="100%" class="rounded-4">
+      </div>
+
+    </div></div>
+  </div>
+</div>
+<!-- section ends -->
+
+
+  <!-- section -->
+  <div id="backcontainer4">
+    <div class="container px-4 py-5">
+      <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+      <div class="row g-4 align-items-center">
+   
+        <div class="col-12 col-md-6">
+          <img src="assets/img/img3.png" alt="img3" width="100%" class="rounded-4">
+        </div>
+    
+        <div class="col-12 col-md-6 content px-5">
+         
+          <ul class="list-unstyled fs-3 mt-5">
+            <li class="mb-2 align-self-center">
+              <div class="row mb-5">
+                <h1 class="display-5">☕</h1>
+                <div class="col">
+                  <h3>내 마음에 딱 맞춘 심리 케어</h3>
+                </div>
+                <span class="fs-5">
+                  <ul>
+                    <li id="ildot">
+                      AI와 특성 기반 알고리즘으로 심리 데이터를 분석해요
+                    </li>
+                    <li id="ildot">
+                      맞춤형 챌린지 추천해드려요
+                    </li>
+                    <li id="ildot">
+                      과학적 솔루션으로 마음 건강을 지켜요
+                    </li>
+                  </ul>
+
+                </span>
+              </div>
+            </li>
+            <li class="mb-2 align-self-center">
+              <div class="row mb-5">
+                <h1 class="display-5">📖</h1>
+                <div class="col">
+                  <h3>오직 나를 위한 기록</h3>
+                </div>
+                <span class="fs-5">
+                  <ul>
+                    <li id="ildot">
+                      우울·불안 관리 맞춤형 일기 작성해요
+                    </li>
+                    <li id="ildot">
+                      나만을 위한 개인화된 일기로 마음 정리해요
+                    </li>
+                  </ul>
+
+                </span>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    
+    </div> </div>
+  </div>
+
+  </div>
+  </div>
+  <!-- section ends -->
+
+
+
+
+
+  
+
+
+  <!-- features -->
+
+  <!-- features ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- reviews -->
+  <div id="backcontainer2">
+    <div class="container px-4 py-5">
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <h2 class="pb-2 display-6 text-dark text-center text-bolder mb-5">이용자 후기</h2>
+      </div>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div data-aos="flip-left" data-aos-duration="1500" data-aos-easing="ease-in-out">
+          <div class="col">
+            <div class="card shadow-sm rounded-4 py-4">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold mb-3">
+                  <span id="htGradient2" class="stars">★★★★☆</span> 4.0
+                </h5>
+                <p class="card-text">감정 일기를 쓰다 보니 스스로를 더 잘 알게 됐어요.</p>
+                <small>
+                  <p class="card-text text-muted">- 최00, 25세 -</p>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="flip-left" data-aos-duration="1500" data-aos-easing="ease-in-out">
+          <div class="col">
+            <div class="card shadow-sm rounded-4 py-4">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold mb-3">
+                  <span id="htGradient2" class="stars">★★★★★</span> 5.0
+                </h5>
+                <p class="card-text">쉽고 재미있게 마음 건강을 챙길 수 있어요!</p>
+                <small>
+                  <p class="card-text text-muted">- 강00, 22세 -</p>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="flip-left" data-aos-duration="1500" data-aos-easing="ease-in-out">
+          <div class="col">
+            <div class="card shadow-sm rounded-4 py-4">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold mb-3">
+                  <span id="htGradient2" class="stars">★★★★☆</span> 4.0
+                </h5>
+                <p class="card-text">마음이 복잡할 때 정리하는 데 큰 도움을 받았어요.</p>
+                <small>
+                  <p class="card-text text-muted">- 이00, 30세 -</p>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="flip-left" data-aos-duration="1500" data-aos-easing="ease-in-out">
+          <div class="col">
+            <div class="card shadow-sm rounded-4 py-4">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">
+                  <span id="htGradient2" class="stars">★★★★★</span> 5.0
+                </h5>
+                <p class="card-text">매일 조금씩 자신감을 얻고 있어요.</p>
+                <small>
+                  <p class="card-text text-muted">- 박00, 27세 -</p>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- reviews ends -->
+
+
+  <!-- footer -->
+  <footer class="footer px-4 py-5">
+
+    <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+      <section class="py-4 py-md-5 py-xl-8 bg-dark">
+        <div class="container overflow-hidden">
+          <div class="row gy-4 gy-lg-0">
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="widget">
+                <h4 class="widget-title mb-4">Contacts</h4>
+                <address class="mb-4 text-secondary">
+                  <p class="row"><span class="col-3 text-light">본사</span><span class="col-9">대전시 유성구 대학로 99 산학연교육연구동
+                      901호 A-10</span></p>
+                  <p class="row"><span class="col-3 text-light">기업부설연구소</span><span class="col-9">대전시 유성구 유성대로 821번길
+                      4-17 두공빌딩301호</span></p>
+                </address>
+                <p class="mb-4 ">
+
+                <p class="row text-secondary"><span class="col-3 text-light">TEL</span><span
+                    class="col-9">042-716-0230</span></p>
+                <p class="row text-secondary"><span class="col-3 text-light">HP</span><span
+                    class="col-9">010-3368-7072</span></p>
+                <p class="row text-secondary"><span class="col-3 text-light">FAX</span> <span
+                    class="col-9">070-4808-1104</span></p>
+
+                </p>
+                <p class="mb-4">
+                <p class="row text-secondary"><span class="col-3 text-light">EMAIL 1</span> <span
+                    class="col-9">kobotisco@gmail.com</span></p>
+                <p class="row text-secondary"><span class="col-3 text-light">EMAIL 2</span> <span
+                    class="col-9">kobotis00@kobotis.com</span></p>
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="widget">
+                <h4 class="widget-title mb-4">Services</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a href="https://missioncity.creatorlink.net/" class="link-white text-decoration-none">MIND CITY</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="http://steptokorea.com/ko" class="link-white text-decoration-none">StepToKorea</a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="widget">
+                <h4 class="widget-title mb-4">Company</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a href="about.html" class="link-white text-decoration-none">회사소개</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="about.html#kobotishistory" class="link-white text-decoration-none">연혁</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="expert.html" class="link-white text-decoration-none">참여전문가</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="index.html#kobotismap" class="link-white text-decoration-none">찾아오시는 길</a>
+                  </li>
+                  <li class="mb-0">
+                    <a href="recruit.html" class="link-white text-decoration-none">인재채용</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+      <div class="bg-dark py-4 py-md-5 py-xl-8">
+        <div class="container overflow-hidden">
+          <div class="row gy-4 gy-md-0 align-items-sm-center">
+            <div class="col-xs-12 col-sm-6 col-md-4 order-0 order-md-0">
+              <div class="footer-logo-wrapper text-center text-sm-start">
+                <a href="#!">
+                  <img src="./assets/img/logo.svg" alt=" logo" width="200">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-md-4 order-2 order-md-1">
+              <div class="footer-copyright-wrapper text-secondary text-center fw-lighter">
+                &copy; 2024. All Rights Reserved.
+              </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 order-1 order-md-2">
+              <!--  <div class="social-media-wrapper text-white">
+                    <ul class="list-unstyled m-0 p-0 d-flex justify-content-center justify-content-sm-end">
+                      <li class="me-3">
+                        <a href="#!" class="link-secondary link-opacity-100-hover">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="me-3">
+                        <a href="#!" class="link-secondary link-opacity-75-hover">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path
+                              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="me-3">
+                        <a href="#!" class="link-secondary link-opacity-75-hover">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="">
+                        <a href="#!" class="link-secondary link-opacity-75-hover">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer ends -->
+
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 {
-    "editor.fontSize": 14,
-    "editor.fontFamily": " Space Mono, NovaMono, Comic Mono,  monospace",
+    "editor.fontSize": 13,
+    "editor.fontFamily": " Space Mono,  Comic Mono, NovaMono,monospace",
     "editor.wordWrap": "on"
 }
